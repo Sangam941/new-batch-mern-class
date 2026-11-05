@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: red;
+            color: white;
+            /* pexel fixed unit */
+            /* 
+            vw -> viewport width
+            vh -> viewport height
+            */
+
+            /* width: 90vw;
+            height: 90vh; */
+
+            width: 400px;
+            height: 500px;
+            
+
+            /* 
+            % -> percentage
+            */
+            /* vw =% */
+            /* vh!=% */
+            /* width: 50%;
+            height: 50%; */
+            margin-bottom: 20px;
+        }
+
+        .parent{
+            padding: 10px;
+            background-color: green;
+            height: 50vh;
+            width: 60vw;
+            margin-bottom: 20px;
+        }
+
+        .child{
+            background-color: yellow;
+            height: 50%;
+            width: 50%;
+        }
+
+         /* 
+        rem->
+        em->
+        */
+
+       
+
+        .container{
+            background-color: aqua;
+            height: 100vh;
+            width: 100vw;
+            /* 
+            16*3 = 48
+
+            16px = 1rem
+            32px = 2rem
+            48px = 3rem
+            */
+
+            /* 
+            rem is always relative with the root element font size
+            */
+            font-size: 2rem;
+
+            /* 
+            em-> is always relative to its container or element
+            */
+        }
+
+
+       
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        box
+    </div>
+
+    <div class="parent">
+        <div class="child">box2</div>
+    </div>
+
+    <div class="container">
+        containter
+    </div>
+</body>
+</html>
