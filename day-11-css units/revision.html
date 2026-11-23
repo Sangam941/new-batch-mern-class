@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        background-color: red;
+        height: 500px;
+        width: 1000px;
+      }
+
+      /* responsive */
+      /* vw and vh */
+      .res {
+        background-color: blue;
+        height: 300px;
+        width: 80vw;
+      }
+
+      .parent {
+        background-color: red;
+        height: 70vh;
+        width: 70vw;
+        padding: 20px;
+      }
+
+      .child {
+        background-color: green;
+        height: 50%;
+        width: 90%;
+        /* height: 50vh;
+            width: 90vw; */
+      }
+      /* html{
+        font-size: 30px;
+    } */
+    
+    /* by default 16px */
+      /* 16*3=48px */
+      /* 20*3 = 60px */
+      span{
+        font-size:2rem;
+      }
+
+      div{
+        font-size: 30px;
+      }
+
+
+      p{
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="container">
+    </div>
+
+    <div class="res"></div> -->
+
+    <!-- <div class="parent">
+        <div class="child"></div>
+    </div> -->
+
+    <!-- 
+            rem is always relative with the root element font size
+           
+            em-> is always relative to its container or element
+     -->
+
+     <span>hello this is the paragraph...</span>
+
+     <div>
+        <p class="para">hello hi</p>
+     </div>
+
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model in css</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: green;
+            height: 500px;
+            width: 1000px;
+            color: white;
+            font-size: 3rem;
+
+            /* margin: 50px 20px 10px 5px; */
+            margin: 50px;
+
+            padding: 70px;
+            border: 2px solid red;
+            border-radius: 50px;
+
+        }
+
+        .parent{
+            background-color: red;
+            height: 500px;
+            width: 500px;
+            padding: 20px; 
+        }
+
+        .child{
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
+        }
+
+        .circle{
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            margin: 20px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        i am a box
+    </div>
+
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+
+    <div class="circle"></div>
+</body>
+</html>
