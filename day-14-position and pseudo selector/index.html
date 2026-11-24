@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseudo selector</title>
+
+    <style>
+      /* class selector */
+      .box {
+        height: 100px;
+        width: 100px;
+        background-color: rebeccapurple;
+        cursor: pointer;
+      }
+
+      /* pseudo selector */
+      .box:hover {
+        background-color: rgb(149, 78, 219);
+      }
+
+      p:first-child {
+        background-color: red;
+      }
+
+      p:last-child {
+        background-color: aqua;
+      }
+      p:nth-child(2) {
+        background-color: green;
+      }
+
+      /* button:disabled {
+        background-color: green;
+        color: white;
+      } */
+
+      button {
+        background-color: red;
+      }
+      button:disabled {
+        background-color: green;
+      }
+
+    /* ~ sibling  */
+
+      input:checked ~ h1 {
+        background-color: red;
+      }
+
+      .before:hover::after{
+        content: "";
+        width: 50px;
+        height: 5px;
+        display: block;
+        background-color: red;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+
+    <div class="before">hi</div>
+
+    <div class="box2">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+        necessitatibus?
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus,
+        dolore.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+        consequatur!
+      </p>
+    </div>
+
+    <button>help me</button>
+    <button disabled>hello</button>
+
+    <div>
+      <input type="checkbox" />
+      <h1 class="p">hello</h1>
+    </div>
+  </body>
+</html>
